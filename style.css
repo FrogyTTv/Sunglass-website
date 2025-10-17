@@ -1,0 +1,98 @@
+* {
+    --color-main-gradient: linear-gradient(90deg,rgba(255, 103, 35, 1) 50%, rgba(153, 96, 70, 1) 100%);
+    --color-black: #181818;
+    --color-gray-text: #D1D1D1;
+    --color-offwhite: #F5F5F7;
+    --color-main-orange: #FF6723;
+
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    
+    --fw-extralight: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+}
+body {
+    background-color: var(--color-offwhite);
+}
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url(./Fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
+
+h1 {
+    /* Big title - Normal */
+    /* font-size: 4rem; */
+    font-weight: var(--fw-medium);
+    font-size: 64pt;
+}
+h2 {
+    /* Special title */
+    font-family: 'Integral CF';
+    /* font-size: 2rem; */
+    font-size: 32pt;
+}
+h3 {
+    /* Subtitle */
+    font-weight: var(--fw-regular);
+    /* font-size: 2rem; */
+    font-size: 32pt;
+}
+h4 {
+    /* Special title */
+    font-family: 'Integral CF';
+    font-size: 0.8888888889rem;
+    /* font-size: 16pt; */
+}
+p {
+    /* Paragraph */
+    font-weight: var(--fw-medium);
+    /* font-size: 1rem; */
+    font-size: 18pt
+}
+
+.smal-font {
+    font-weight: 350;
+    font-size: 0.8888888889rem;
+    letter-spacing: 0.5px;
+    /* font-size: 16pt */
+}
+
+.navbar {
+    display: flex;
+    gap: 0.6rem;
+    /* background-color: red; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-section {
+    display: flex;
+    background-color: var(--color-main-orange);
+    padding-block: 0.9rem;
+    justify-content: center;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    background-color: var(--color-black);
+    color: var(--color-gray-text);
+    padding-block: 0.9rem;
+}
+.navigation li {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.nav-shopping-cart {
+    transform: translateY(-0.1rem);
+    /* scale: 0.9; */
+}
