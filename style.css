@@ -58,11 +58,20 @@ p {
     font-size: 18pt
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .smal-font {
     font-weight: 350;
     font-size: 0.8888888889rem;
     letter-spacing: 0.5px;
+    line-height: 1.1;
     /* font-size: 16pt */
+}
+a:hover {
+    color: var(--color-offwhite);
 }
 
 .navbar {
@@ -81,18 +90,30 @@ p {
 }
 .navigation {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 2.5rem;
     background-color: var(--color-black);
     color: var(--color-gray-text);
     padding-block: 0.9rem;
 }
-.navigation li {
+.nav-links {
     display: flex;
+    align-items: center;
     gap: 1.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-links li {
+    display: flex;
+    align-items: center;
 }
 
-.nav-shopping-cart {
-    transform: translateY(-0.1rem);
-    /* scale: 0.9; */
+.nav-shopping-cart{
+    stroke: var(--color-gray-text);
+    transform: translateY(0.01rem);
+}
+.nav-shopping-cart:hover {
+    stroke: var(--color-offwhite);
 }
