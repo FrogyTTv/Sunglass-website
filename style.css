@@ -1,5 +1,5 @@
 * {
-    --color-main-gradient: linear-gradient(90deg,rgba(255, 103, 35, 1) 50%, rgba(153, 96, 70, 1) 100%);
+    --color-main-gradient: linear-gradient(90deg,#ff6723 50%, #996046 100%);
     --color-black: #181818;
     --color-gray-text: #D1D1D1;
     --color-offwhite: #F5F5F7;
@@ -36,8 +36,8 @@ h1 {
 h2 {
     /* Special title */
     font-family: 'Integral CF';
-    /* font-size: 2rem; */
-    font-size: 32pt;
+    font-size: 3.5rem;
+    /* font-size: 32pt; */
 }
 h3 {
     /* Subtitle */
@@ -116,4 +116,47 @@ a:hover {
 }
 .nav-shopping-cart:hover {
     stroke: var(--color-offwhite);
+}
+
+header {
+    display: flex;
+    /* height: calc(100vh - 110px); */
+    height: 830px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.header-typografy {
+    padding-top: 10rem;
+}
+
+.visual-element {
+    display: flex;
+    width: 127.2rem;
+    padding-bottom: 1.5rem;
+    justify-content: center;
+    gap: 3rem;
+}
+.visual-element div {
+    --border-radius: 5.5rem;
+    display: inline-block;
+    position: relative;
+    width: 25.7rem;
+    height: 27.5rem;
+    background: var(--color-main-gradient);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.visual-element div img {
+    position: absolute;
+    bottom: 0;
+}
+
+.rect2 img {
+    width: 22rem;
+}
+.rect3 img {
+    right: 0;
+    width: 26.5rem;
 }
