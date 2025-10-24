@@ -24,7 +24,11 @@ body {
 }
 
 @font-face {
-    font-family: 'Integral CF';
+    font-family: 'Integral CF Regular';
+    src: url(./Fonts/Fontspring-DEMO-integralcf-regular.otf);
+}
+@font-face {
+    font-family: 'Integral CF Bold';
     src: url(./Fonts/Fontspring-DEMO-integralcf-bold.otf);
 }
 
@@ -36,7 +40,7 @@ h1 {
 }
 h2 {
     /* Special title */
-    font-family: 'Integral CF';
+    font-family: 'Integral CF Bold';
     font-size: 3.5rem;
     /* font-size: 32pt; */
 }
@@ -48,20 +52,23 @@ h3 {
 }
 h4 {
     /* Special title */
-    font-family: 'Integral CF';
+    font-family: 'Integral CF Regular';
     font-size: 0.8888888889rem;
     /* font-size: 32pt; */
 }
 p {
     /* Paragraph */
     font-weight: var(--fw-medium);
-    /* font-size: 1rem; */
-    font-size: 18pt
+    font-size: 1rem;
+    /* font-size: 18pt */
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+#top-section-title {
+    font-family: 'Integral CF Bold';
 }
 
 .smal-font {
@@ -71,7 +78,7 @@ a {
     line-height: 1.1;
     /* font-size: 16pt */
 }
-a:hover {
+.nav-links a:hover {
     color: var(--color-offwhite);
 }
 
@@ -165,6 +172,14 @@ header {
 .collection-section {
     margin-top: 7rem;
 }
+.collection-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+    gap: 1.5rem;
+    justify-self: center;
+    width: 90%;
+    max-width: 100rem;
+}
 
 .collection-section h1 {
     text-align: center;
@@ -172,15 +187,25 @@ header {
 }
 
 .card {
-    --font-size: 4rem;
+    --font-size: 1.7rem;
     display: flex;
     flex-direction: column;
-    max-width: 40rem;
-    background-color: red;
+    height: 18rem;
+    position: relative;
+    justify-content: space-between;
+    padding-block: 1.3rem;
+    padding-inline: 2rem;
+    background-color: white;
+}
+
+.cart-icon {
+    /* position: absolute; */
+    stroke: var(--color-black);
+    width: 1.5rem;
+    align-self: end;
 }
 .text-elements {
     display: table;
-
 }
 .glasses-name {
     display: table-cell;
@@ -194,5 +219,9 @@ header {
     text-align: right;
 }
 .glasses-image {
-    /* width: 30rem; */
+    align-self: center;
+    margin-block: auto;
+    width: 23rem;
+    /* padding-top: 3rem; */
+    /* width: 90%; */
 }
