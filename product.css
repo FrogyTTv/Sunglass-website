@@ -156,6 +156,7 @@ main {
 .left img {
     /* background-color: yellow; */
     width: 90%;
+    max-width: 50rem;
 }
 .right {
     display: flex;
@@ -251,7 +252,20 @@ main {
     .left {
         flex: 1;
     }
+    .left img {
+        max-width: 40rem;
+    }
     .right img {
         display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .navigation {
+        justify-content: space-between;
+        padding-inline: 2rem;
     }
 }

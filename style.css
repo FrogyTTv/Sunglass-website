@@ -382,3 +382,16 @@ footer {
     }
 }
 
+@media (max-width: 650px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .navigation {
+        /* display: flex; */
+        justify-content: space-between;
+        padding-inline: 2rem;
+    }
+    .visual-element .rect4 {
+        display: none;
+    }
+}
