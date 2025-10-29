@@ -22,3 +22,5 @@ The project does **not** include any backend functionality — it’s purely fro
 - 📱 **Responsive design** — works well on desktop and mobile  
 - 🖼️ **Image and icon integration** with organized asset folders  
 - 💡 **Easy to extend** with additional products or pages
+
+Summary describtion made from ChatGPT
