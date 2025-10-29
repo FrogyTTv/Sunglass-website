@@ -251,7 +251,7 @@ header {
     letter-spacing: 0.4px;
     line-height: 1.2;
 
-    margin-bottom: 10rem; /* spacing under the element */
+    margin-bottom: 8rem; /* spacing under the element */
 
     img {
         width: 28.8rem;
@@ -268,12 +268,15 @@ header {
     margin-right: 6.5rem;
     border-radius: 0.6rem;
     border: #6E6E73 solid 1px;
-    /* font-size: 1em; */
-    letter-spacing: 0.7px;
+
+    font-size: 0.9em;
+    letter-spacing: 0.4px;
+    color: var(--color-black);
 }
 #newsletter-input::placeholder {
-    font-size: 1.1em;
-    letter-spacing: 0.4px;
+    /* font-size: 1.1em;
+    letter-spacing: 0.4px; */
+    color: #6E6E73;
 }
 .newsletter-typografy {
     display: flex;
@@ -284,7 +287,7 @@ header {
 
 footer {
     position: relative;
-    height: 16.5rem;
+    height: 13.5rem;
 }
 
 .footer-overlay {
