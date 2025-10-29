@@ -19,6 +19,9 @@
     --fw-bold: 700;
     --fw-extrabold: 800;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--color-offwhite);
 }
@@ -78,6 +81,9 @@ a {
     letter-spacing: 0.5px;
     line-height: 1.1;
     /* font-size: 16pt */
+}
+.smal-font:hover {
+    color: var(--color-offwhite);
 }
 .nav-links a:hover {
     color: var(--color-offwhite);
@@ -256,7 +262,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    
 }
 #newsletter-input {
     padding: 1rem;
@@ -291,15 +296,20 @@ footer {
     bottom: 0;
     z-index: 1;
     color: white;
-    box-sizing: border-box;
     width: 100%;
     padding-inline: var(--offset-value);
-    padding-bottom: 3rem;
+    padding-bottom: 2.8rem;
+    box-sizing: border-box;
 }
-
 #up-arrow {
     aspect-ratio: 1;
     height: 56px;
+    margin-bottom: 9px;
+}
+.footer-typografy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .footer-typografy ul {
@@ -323,3 +333,49 @@ footer {
     height: inherit;
     width: inherit;
 }
+
+/* Making the footer & newsletter section responsive: using media queries */
+
+@media (max-width: 1300px) {
+    .footer-backdrop .rect4 {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .footer-backdrop .rect3 {
+        display: none;
+    }
+    .newsletter-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+        text-align: center;
+        padding-inline: 3rem;
+        padding-block: 4rem;
+
+        margin-bottom: 4rem;
+
+        img {
+            width: 25rem;
+        }
+    }
+    #newsletter-input {
+        margin: 0;
+    }
+} 
+
+@media (max-width: 700px) {
+    .footer-backdrop .rect2 {
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    .newsletter-container img {
+        width: 20rem;
+    }
+    h1 {
+        font-size: calc(3.4em/1.3);
+    }
+}
+
