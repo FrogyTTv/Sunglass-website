@@ -245,6 +245,9 @@ main {
 }
 
 @media (max-width: 900px) {
+    body {
+        height: 80dvh;
+    }
     main {
         display: flex;
         flex-direction: column;
