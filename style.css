@@ -399,4 +399,12 @@ footer {
     .glasses-image {
         width: 20rem;
     }
+    .header-typografy {
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    .visual-element {
+        scale: 0.9;
+    }
 }
