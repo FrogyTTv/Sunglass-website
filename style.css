@@ -136,7 +136,8 @@ a {
 header {
     display: flex;
     /* height: calc(100vh - 110px); */
-    height: 830px;
+    /* height: 830px; */
+    height: 88dvh;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -217,7 +218,6 @@ header {
 }
 
 .cart-icon {
-    /* position: absolute; */
     stroke: var(--color-black);
     width: 1.5rem;
     align-self: end;
@@ -241,8 +241,6 @@ header {
     margin-block: auto;
     width: 23rem;
     transition: scale 200ms;
-    /* padding-top: 3rem; */
-    /* width: 90%; */
 }
 
 .newsletter-container {
@@ -252,7 +250,7 @@ header {
     height: 33rem;
     /* gap: 12.4rem; */
     background-color: white;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
     line-height: 1.2;
 
     margin-bottom: 8rem; /* spacing under the element */
@@ -397,5 +395,8 @@ footer {
     }
     .visual-element .rect4 {
         display: none;
+    }
+    .glasses-image {
+        width: 20rem;
     }
 }
