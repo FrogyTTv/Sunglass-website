@@ -375,12 +375,6 @@ footer {
         display: none;
     }
 }
-@media (max-width: 550px) {
-    .newsletter-container img {
-        width: 20rem;
-    }
-    
-}
 
 @media (max-width: 650px) {
     .hide-on-mobile {
@@ -393,9 +387,6 @@ footer {
     }
     .visual-element .rect4 {
         display: none;
-    }
-    .glasses-image {
-        width: 20rem;
     }
     
     .header-typografy {
@@ -415,4 +406,17 @@ footer {
         height: 600px;
         overflow: hidden;
     }
+    .card {
+        height: 13rem;
+    }
+    .glasses-image {
+        width: 16rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .newsletter-container img {
+        width: 20rem;
+    }
+    
 }
