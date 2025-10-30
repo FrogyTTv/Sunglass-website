@@ -400,7 +400,7 @@ footer {
         width: 20rem;
     }
     .header-typografy {
-        margin-top: 5rem;
+        margin-block: 5vh;
     }
     h2 {
         font-size: 2.5em;
