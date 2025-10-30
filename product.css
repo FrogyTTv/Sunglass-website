@@ -135,6 +135,9 @@ a {
     stroke: var(--color-offwhite);
 }
 
+html {
+    height: 100dvh;
+}
 
 main {
     display: grid;
