@@ -245,9 +245,9 @@ main {
 }
 
 @media (max-width: 900px) {
-    /* body {
-        height: 80dvh;
-    } */
+    body {
+        height: auto;
+    }
     main {
         display: flex;
         flex-direction: column;
@@ -275,7 +275,7 @@ main {
 
 @media (max-width: 450px) {
     .left {
-        flex: 0.8;
+        flex: 0.7;
     }
     .right {
         padding-top: 1.5rem;
