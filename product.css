@@ -142,6 +142,7 @@ main {
     /* grid-template-columns: 2fr 1.05fr; */
     height: calc(100vh - 110px);
     gap: 2.5px;
+    overflow: hidden;
 }
 .left {
     /* display: flex; */
