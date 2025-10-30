@@ -400,7 +400,7 @@ footer {
         width: 20rem;
     }
     header {
-        height: 78dvh;
+        /* height: 78dvh; */
     }
     .header-typografy {
         margin-block: 5rem;
