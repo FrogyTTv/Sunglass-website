@@ -177,6 +177,9 @@ header {
 }
 
 .collection-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 7rem;
     margin-bottom: 8rem;
 }
