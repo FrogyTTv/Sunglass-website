@@ -220,6 +220,7 @@ header {
 .cart-icon {
     stroke: var(--color-black);
     width: 1.5rem;
+    aspect-ratio: 1;
     align-self: end;
 }
 .text-elements {
